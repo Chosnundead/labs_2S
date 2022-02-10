@@ -59,5 +59,7 @@ public class Car {
 
     public void _replaceFile(File file) throws Exception {
         this.file = file;
+        file.mkdirs();
+        file.createNewFile();
     }
 }

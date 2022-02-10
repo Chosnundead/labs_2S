@@ -202,7 +202,7 @@ public class S1 {
                         arr.set(step, arr.get(step + 1));
                         arr.set(step + 1, tempCar);
                         _recreateFile(pathToDir, step, arr);
-                        _recreateFile(pathToDir, step + 1, arr);
+                        _recreateFile(pathToDir, (step + 1), arr);
                     }
                 }
             }
@@ -214,7 +214,7 @@ public class S1 {
                         arr.set(step, arr.get(step + 1));
                         arr.set(step + 1, tempCar);
                         _recreateFile(pathToDir, step, arr);
-                        _recreateFile(pathToDir, step + 1, arr);
+                        _recreateFile(pathToDir, (step + 1), arr);
                     }
                 }
             }
@@ -226,7 +226,7 @@ public class S1 {
                         arr.set(step, arr.get(step + 1));
                         arr.set(step + 1, tempCar);
                         _recreateFile(pathToDir, step, arr);
-                        _recreateFile(pathToDir, step + 1, arr);
+                        _recreateFile(pathToDir, (step + 1), arr);
                     }
                 }
             }
@@ -238,7 +238,7 @@ public class S1 {
                         arr.set(step, arr.get(step + 1));
                         arr.set(step + 1, tempCar);
                         _recreateFile(pathToDir, step, arr);
-                        _recreateFile(pathToDir, step + 1, arr);
+                        _recreateFile(pathToDir, (step + 1), arr);
                     }
                 }
             }
@@ -341,7 +341,6 @@ public class S1 {
     }
 
     public static void _recreateFile(String pathToDir, int id, LinkedList<Car> arr) throws Exception {
-        arr.get(id)._deleteFile();
         arr.get(id)._replaceFile(new File(pathToDir + "Data\\id" + id + ".Car"));
         arr.get(id)._writeCarToFile();
     }
@@ -416,6 +415,7 @@ public class S1 {
         }
     }
 
+    @SuppressWarnings("empty-statement")
     public static void main(String[] args) throws Exception {
         String pathToDir = _testOrCreatePath();
 
