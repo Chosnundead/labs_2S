@@ -140,13 +140,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Lab11.cpp" />
     <ClCompile Include="Lab3.cpp" />
     <ClCompile Include="Lab4.cpp" />
+    <ClCompile Include="Lab5.cpp" />
+    <ClCompile Include="Lab6.cpp" />
+    <ClCompile Include="Lab8.cpp" />
     <ClCompile Include="O1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Lab11.h" />
     <ClInclude Include="Lab3.h" />
     <ClInclude Include="Lab4.h" />
+    <ClInclude Include="Lab5.h" />
+    <ClInclude Include="Lab6.h" />
+    <ClInclude Include="Lab8.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

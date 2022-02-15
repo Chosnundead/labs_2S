@@ -48,6 +48,28 @@ void _showTrainStation(vector<Train>& arr) {
 	}
 }
 
+bool _equal(vector<Train>& arr, int number1, int number2) {
+	if ((number1 < arr.size() && number1 >= 0) && (number2 < arr.size() && number2 >= 0)) {
+		if (arr[number1].days == arr[number2].days && arr[number1].number == arr[number2].number && arr[number1].timeIn == arr[number2].timeIn && arr[number1].timeOut == arr[number2].timeOut && arr[number1].to == arr[number2].to) {
+			return true;
+		}
+		else
+			return false;
+	}
+	else
+		return false;
+}
+
+void _equals(vector<Train>& arr) {
+	for (int step = 0; step < arr.size(); step++) {
+		for (int anotherStep = step + 1; anotherStep < arr.size(); anotherStep++) {
+			if (_equal(arr, step, anotherStep)) {
+				cout << "train[" << step << "] == " << "train[" << anotherStep << "]" << endl;
+			}
+		}
+	}
+}
+
 int _menu() {
 
 	int choise;
@@ -57,10 +79,16 @@ int _menu() {
 	cout << "4: Поиск информации" << endl;
 	cout << "5: Запись информации в файл" << endl;
 	cout << "6: Чтение данных из файла" << endl;
+	cout << "7: Очистить стек" << endl;
+	cout << "8: Подсчет одинаковых" << endl;
 	cout << "0: Выход" << endl;
 	cout << "Ваш выбор: ";
 	cin >> choise;
 	return (int)choise;
+}
+
+void _clear(vector<Train>& arr) {
+	arr.clear();
 }
 
 void _deleteTrain(vector<Train>& arr, int number) {
@@ -143,6 +171,12 @@ Lab4::Lab4() {
 			break;
 		case 6:
 			_addFromFile(trainStantion);
+			break;
+		case 7:
+			_clear(trainStantion);
+			break;
+		case 8:
+			_equals(trainStantion);
 			break;
 		default:
 			break;
