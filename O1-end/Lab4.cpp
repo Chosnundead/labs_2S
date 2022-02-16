@@ -71,7 +71,6 @@ void _equals(vector<Train>& arr) {
 }
 
 int _menu() {
-
 	int choise;
 	cout << "1: Ввод элементов структуры с клавиатуры" << endl;
 	cout << "2: Вывод элементов структуры в консольное окно" << endl;

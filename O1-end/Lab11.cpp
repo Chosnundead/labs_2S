@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <list>
 
 using namespace std;
 
@@ -11,7 +12,7 @@ struct Tree {
 	Tree* right = NULL, * left = NULL;
 };
 
-void _createTree(vector<Tree>& arr) {
+void _createTree(list<Tree>& arr) {
 	int index;
 	string value;
 	Tree add;
@@ -25,7 +26,7 @@ void _createTree(vector<Tree>& arr) {
 	arr.push_back(add);
 }
 
-void _addInTree(vector<Tree>& arr) {
+void _addInTree(list<Tree>& arr) {
 	int index;
 	string value;
 	Tree add;
@@ -38,32 +39,32 @@ void _addInTree(vector<Tree>& arr) {
 	add.value = value;
 	arr.push_back(add);
 	Tree* test = &arr.front();
-	Tree* newTree = &arr.back();
+	//Tree* newTree = &arr.back();
 	while (true) {
-		if (test->index < newTree->index) {
+		if (test->index < arr.back().index) {
 			if (test->right)
 				test = test->right;
 			else {
-				test->right = newTree;
+				test->right = &arr.back();
 				break;
 			}
 		}
-		else if (test->index > newTree->index) {
+		else if (test->index > arr.back().index) {
 			if (test->left)
 				test = test->left;
 			else {
-				test->left = newTree;
+				test->left = &arr.back();
 				break;
 			}
 		}
 		else {
-			test->value = newTree->value;
+			test->value = arr.back().value;
 			break;
 		}
 	}
 }
 
-void _showTree(vector<Tree>& arr, int index) {
+void _showTree(list<Tree>& arr, int index) {
 	Tree* root = &arr.front();
 	while (true) {
 		if (root->index < index) {
@@ -89,11 +90,43 @@ void _showTree(vector<Tree>& arr, int index) {
 	}
 }
 
-void _choiseTreeAndShow(vector<Tree>& arr) {
+void _choiseTreeAndShow(list<Tree>& arr) {
 	int index;
 	cout << "Введите индекс: ";
 	cin >> index;
 	_showTree(arr, index);
+}
+
+void _showLevelOfTree(list<Tree>& arr) {
+	Tree* root = &arr.front();
+	Tree* rootStep = root;
+	int level, counter = 0;
+	cout << "Введите уровень для сканирования: ";
+	cin >> level;
+	for (int step = 0; step < (int)pow(2, level); step++) {
+		for (int stepLevel = 0; stepLevel < (level + 1); stepLevel++) {
+			if (rootStep->left && (step & (1 << stepLevel))) {
+				rootStep = rootStep->left;
+			}
+			else if (rootStep->right && !(step & (1 << stepLevel))) {
+				rootStep = rootStep->right;
+			}
+			else {
+				if (stepLevel == level) {
+					cout << "tree[" << rootStep->index << "];" << "\t";
+					counter++;
+				}
+				break;
+			}
+		}
+	}
+	cout << endl;
+	if (counter >= 2) {
+		cout << "Древо сбалансированно до\\на этом уровне!" << endl;
+	}
+	else {
+		cout << "Древо не сбалансированно на этом уровне!" << endl;
+	}
 }
 
 int _menuTree() {
@@ -102,6 +135,7 @@ int _menuTree() {
 	cout << "1: Создать дерево" << endl;
 	cout << "2: Добавить ветку" << endl;
 	cout << "3: Вывод ветки по индексу" << endl;
+	cout << "4: Сканирование уровня + его проверка на сбалансированность" << endl;
 	cout << "0: Выход" << endl;
 	cout << "Ваш выбор: ";
 	cin >> choise;
@@ -109,7 +143,7 @@ int _menuTree() {
 }
 
 Lab11::Lab11() {
-	vector<Tree> tree;
+	list<Tree> tree;
 
 	while (int choise = _menuTree()) {
 		switch (choise) {
@@ -121,6 +155,9 @@ Lab11::Lab11() {
 			break;
 		case 3:
 			_choiseTreeAndShow(tree);
+			break;
+		case 4:
+			_showLevelOfTree(tree);
 			break;
 		default:
 			break;

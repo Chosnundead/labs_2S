@@ -1,3 +1,5 @@
 ﻿D:\My programs\VS\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (O1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
-  Lab11.cpp
+  Lab16.cpp
+D:\My documents\Code\Labs2Sem\O1-end\Lab16.cpp(26,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\My documents\Code\Labs2Sem\O1-end\Lab16.cpp(180,37): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
   O1.vcxproj -> D:\My documents\Code\Labs2Sem\x64\Debug\O1-end.exe

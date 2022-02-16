@@ -5,6 +5,9 @@
 #include "Lab6.h"
 #include "Lab8.h"
 #include "Lab11.h"
+#include "Lab13.h"
+#include "Lab14.h"
+#include "Lab16.h"
 
 using namespace std;
 
@@ -17,7 +20,10 @@ bool _menu() {
 	cout << "3: Лабораторная работа #5." << endl;
 	cout << "4: Лабораторная работа #6." << endl;
 	cout << "5: Лабораторная работа #8, 9, 10." << endl;
-	cout << "6: Лабораторная работа #11." << endl;
+	cout << "6: Лабораторная работа #11, 12." << endl;
+	cout << "7: Лабораторная работа #13." << endl;
+	cout << "8: Лабораторная работа #14, 15." << endl;
+	cout << "9: Лабораторная работа #16, 17." << endl;
 	cout << "0: Выход." << endl;
 	cout << "Введите номер пункта: ";
 	cin >> check;
@@ -59,6 +65,24 @@ bool _menu() {
 	{
 		system("cls");
 		Lab11 startLab11;
+	}
+	break;
+	case 7:
+	{
+		system("cls");
+		Lab13 startLab13;
+	}
+	break;
+	case 8:
+	{
+		system("cls");
+		Lab14 startLab14;
+	}
+	break;
+	case 9:
+	{
+		system("cls");
+		Lab16 startLab16;
 	}
 	break;
 	}
