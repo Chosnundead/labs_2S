@@ -10,7 +10,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Прочие файлы",
       "ColorIndex": -1
+    },
+    "bebdeafa-a534-4622-a7c7-803d10987e67": {
+      "ProjectGuid": "bebdeafa-a534-4622-a7c7-803d10987e67",
+      "DisplayName": "T1",
+      "ColorIndex": 1
+    },
+    "0d0f106a-6e17-4395-a8f6-94babdf716af": {
+      "ProjectGuid": "0d0f106a-6e17-4395-a8f6-94babdf716af",
+      "DisplayName": "O2(add)",
+      "ColorIndex": 2
+    },
+    "8d459096-d831-4fd1-86ac-3d9fb466b068": {
+      "ProjectGuid": "8d459096-d831-4fd1-86ac-3d9fb466b068",
+      "DisplayName": "O1-end(adds)",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

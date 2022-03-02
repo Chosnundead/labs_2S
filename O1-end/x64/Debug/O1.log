@@ -2,4 +2,6 @@
   Lab16.cpp
 D:\My documents\Code\Labs2Sem\O1-end\Lab16.cpp(26,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
 D:\My documents\Code\Labs2Sem\O1-end\Lab16.cpp(180,37): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  O1.cpp
+  Создание кода...
   O1.vcxproj -> D:\My documents\Code\Labs2Sem\x64\Debug\O1-end.exe
