@@ -40,23 +40,99 @@ const SortTable = () => {
       inStock: 12,
     },
   ]);
+  const [vector, setVector] = useState([true, true, true]);
+  let temp, sortData;
   return (
     <table className="tableOfStocks">
       <thead>
         <tr>
-          <th>Name</th>
           <th
             onClick={(event) => {
-              let temp = table;
-              temp.sort(function (a, b) {
-                return a.price > b.price;
-              });
-              setTable(temp);
+              temp = table.concat();
+              if (vector[2])
+                sortData = temp.sort((a, b) => {
+                  if (a["name"] < b["name"]) {
+                    return -1;
+                  }
+                  if (a["name"] > b["name"]) {
+                    return 1;
+                  }
+                  return 0;
+                });
+              else
+                sortData = temp.sort((a, b) => {
+                  if (a["name"] > b["name"]) {
+                    return -1;
+                  }
+                  if (a["name"] < b["name"]) {
+                    return 1;
+                  }
+                  return 0;
+                });
+              setVector([vector[0], vector[1], !vector[2]]);
+              setTable(sortData);
+            }}
+          >
+            Name
+          </th>
+          <th
+            onClick={(event) => {
+              temp = table.concat();
+              if (vector[0])
+                sortData = temp.sort((a, b) => {
+                  if (a["price"] < b["price"]) {
+                    return -1;
+                  }
+                  if (a["price"] > b["price"]) {
+                    return 1;
+                  }
+                  return 0;
+                });
+              else
+                sortData = temp.sort((a, b) => {
+                  if (a["price"] > b["price"]) {
+                    return -1;
+                  }
+                  if (a["price"] < b["price"]) {
+                    return 1;
+                  }
+                  return 0;
+                });
+              setVector([!vector[0], vector[1], vector[2]]);
+              setTable(sortData);
             }}
           >
             Price
           </th>
-          <th>In Stock</th>
+          <th
+            onClick={(event) => {
+              temp = table.concat();
+              if (vector[1])
+                sortData = temp.sort((a, b) => {
+                  if (a["inStock"] < b["inStock"]) {
+                    return -1;
+                  }
+                  if (a["inStock"] > b["inStock"]) {
+                    return 1;
+                  }
+                  return 0;
+                });
+              else
+                sortData = temp.sort((a, b) => {
+                  if (a["inStock"] > b["inStock"]) {
+                    return -1;
+                  }
+                  if (a["inStock"] < b["inStock"]) {
+                    return 1;
+                  }
+                  return 0;
+                });
+              setVector([vector[0], !vector[1], vector[2]]);
+              setTable(sortData);
+            }}
+          >
+            In Stock
+          </th>
         </tr>
       </thead>
       <tbody>
