@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../styles/PhoneInput.css";
 import InputMask from "react-input-mask";
 
-const PhoneInput = function () {
+const PhoneInput = function (props) {
   const [select, setSelect] = useState(false);
   const [country, setCountry] = useState("by");
   const [input, setInput] = useState("+999 (99) 999-99-99");
@@ -47,6 +47,7 @@ const PhoneInput = function () {
           }}
         ></div>
         <InputMask
+          className={`${props.dataId}`}
           id="inputNumber"
           mask={input}
           style={{

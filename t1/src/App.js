@@ -6,6 +6,10 @@ import TodaysDate from "./components/TodaysDate";
 import ProfessionsMenu from "./components/ProfessionsMenu";
 import PhoneInput from "./components/PhoneInput";
 import SortTable from "./components/SortTable";
+import Calendar from "./components/Calendar";
+import SignUpForm from "./components/SignUpForm";
+import StudentInfo from "./components/StudentInfo";
+import Notes from "./components/Notes";
 
 function App(props) {
   // const [value, setValue] = useState("Text");
@@ -36,6 +40,26 @@ function App(props) {
         <div className="lab3">
           <PhoneInput></PhoneInput>
           <SortTable></SortTable>
+        </div>
+      );
+    case "4":
+      return (
+        <div className="lab4">
+          <Calendar></Calendar>
+        </div>
+      );
+    case "5":
+      return (
+        <div className="lab5">
+          <SignUpForm />
+        </div>
+      );
+    case "6":
+      return (
+        <div className="lab6">
+          <StudentInfo />
+          <hr />
+          <Notes />
         </div>
       );
   }

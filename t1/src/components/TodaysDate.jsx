@@ -1,26 +1,26 @@
 import React from "react";
 import { useState } from "react";
 
-function _timeAsString(props) {
+function _timeAsString(one, two) {
   let time = new Date();
-  time = new Date(time.toLocaleString() + " GMT" + props[0]);
-  if (time.getHours() > 12 && props[1] == 12) {
+  let time2 = new Date(time + " GMT" + one);
+  if (time2.getHours() > 12 && two == 12) {
     return `${
-      time.getHours() - 12
-    }:${time.getMinutes()}:${time.getSeconds()} PM`;
-  } else if (props[1] == 12) {
-    return `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()} AM`;
+      time2.getHours() - 12
+    }:${time2.getMinutes()}:${time2.getSeconds()} PM`;
+  } else if (two == 12) {
+    return `${time2.getHours()}:${time2.getMinutes()}:${time2.getSeconds()} AM`;
   } else {
-    return `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`;
+    return `${time2.getHours()}:${time2.getMinutes()}:${time2.getSeconds()}`;
   }
 }
 
 const TodaysDate = (props) => {
   const [date, setDate] = useState(
-    _timeAsString([props.time.timeZone, props.time.format])
+    _timeAsString(props.time.timeZone, props.time.format)
   );
   setInterval(() =>
-    setDate(_timeAsString([props.time.timeZone, props.time.format]), 100)
+    setDate(_timeAsString(props.time.timeZone, props.time.format), 100)
   );
   return <h2>{date}</h2>;
 };
