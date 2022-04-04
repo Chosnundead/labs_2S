@@ -4,16 +4,70 @@
   box-sizing: border-box;
 }
 
+button {
+  margin: 20px;
+  outline: none;
+}
+button {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  /* background: linear-gradient(-45deg, #009914, #019114, #008834, #005f05);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite; */
+}
+
+button {
+  transition: all 0.3s ease;
+}
+button:hover {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 header a {
   color: white;
   text-decoration: none;
+}
+
+.header .info .info-foot nav a {
+  transition-property: color;
+  transition-timing-function: cubic-bezier();
+  transition-duration: 1s;
+}
+
+.header .info .info-foot nav a:hover {
+  color: #5f0000b7;
 }
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #537100;
+  /* background-color: #537100; */
+  background: linear-gradient(-45deg, #009914, #019114, #008834, #005f05);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
 }
 
 .info {
@@ -58,6 +112,69 @@ header {
   font-weight: 400;
   font-size: 24px;
   text-decoration: none;
+  padding: 10px;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier();
+  transition-duration: 1s;
+}
+
+.nav a:hover {
+  background-color: #929292;
+}
+
+@keyframes show {
+  0% {
+    max-height: 0px;
+  }
+
+  100% {
+    max-height: 100px;
+  }
+}
+
+.school-menu,
+.news-menu {
+  list-style: none;
+  position: absolute;
+  display: none;
+  background-color: #929292;
+  width: max-content;
+  margin-left: 10px;
+  overflow: hidden;
+  max-height: 0px;
+}
+
+.school-menu li,
+.news-menu li {
+  padding: 10px;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier();
+  transition-duration: 1s;
+}
+
+.school-menu li:hover,
+.news-menu li:hover {
+  background-color: #c4c4c4;
+}
+
+.school:hover .school-menu,
+.news:hover .news-menu {
+  display: inherit;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  max-height: 100px;
+}
+
+.school .school-menu:hover,
+.news .news-menu:hover {
+  display: inherit;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  max-height: 100px;
 }
 
 .content {
@@ -97,13 +214,16 @@ header {
 }
 
 .announce-block {
-  background-color: #006316;
+  /* background-color: #006316; */
   color: white;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   padding: 21px 100px 21px 100px;
+  background: linear-gradient(-45deg, #009914, #019114, #008834, #005f05);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
 }
 
 .footer {
@@ -156,6 +276,7 @@ header {
   font-size: 24px;
   color: #4a4a4a;
   text-align: center;
+  margin-bottom: 10px;
 }
 .info-block p:nth-of-type(even) {
   font-family: serif;
@@ -164,4 +285,5 @@ header {
   font-size: 18px;
   color: #4a4a4a;
   text-align: center;
+  margin-bottom: 21px;
 }

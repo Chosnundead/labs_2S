@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SignUpEmailInput from "./SignUpEmailInput";
+import "../styles/style.css"
 
 import PhoneInput from "./PhoneInput";
 

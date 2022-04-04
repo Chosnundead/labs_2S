@@ -150,6 +150,9 @@
     <ClCompile Include="lab2add1.cpp" />
     <ClCompile Include="lab2add2.cpp" />
     <ClCompile Include="lab2add3.cpp" />
+    <ClCompile Include="lab5add1.cpp" />
+    <ClCompile Include="lab5add2.cpp" />
+    <ClCompile Include="lab5add3.cpp" />
     <ClCompile Include="O1-end(adds).cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +167,9 @@
     <ClInclude Include="lab2add1.h" />
     <ClInclude Include="lab2add2.h" />
     <ClInclude Include="lab2add3.h" />
+    <ClInclude Include="lab5add1.h" />
+    <ClInclude Include="lab5add2.h" />
+    <ClInclude Include="lab5add3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

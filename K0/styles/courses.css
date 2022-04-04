@@ -1,0 +1,101 @@
+.main-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px 100px 50px 100px;
+  font-family: serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #4a4a4a;
+}
+
+.list-of-survivalskills {
+  margin-right: 21px;
+}
+
+.list-of-survivalskills-main {
+  list-style: none;
+}
+
+.list-of-survivalskills-main li {
+  margin-top: 10px;
+}
+
+.list-of-survivalskills-main li a {
+  transition-property: color;
+  transition-timing-function: cubic-bezier();
+  transition-duration: 1s;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.list-of-survivalskills-main li a:hover {
+  color: #5f0000b7;
+}
+
+.main-header {
+  align-self: center;
+  margin-bottom: 21px;
+  color: black;
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.block-for-flex-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+}
+
+.grid-block-of-main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-block-of-main-content div {
+  margin: 5px;
+  width: 283px;
+}
+
+.grid-block-of-main-content div p {
+  font-family: serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+
+.grid-block-of-main-content div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c4c4c4;
+  margin: 0px;
+}
+
+.grid-block-of-main-content div div text:nth-of-type(2) {
+  background-color: darkred;
+  color: white;
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier();
+  transition-duration: 1s;
+}
+
+.grid-block-of-main-content div div text:nth-of-type(2):hover {
+  background-color: #929292;
+  color: black;
+}
+
+.grid-block-of-main-content div img {
+  min-width: -webkit-fill-available;
+  max-width: -webkit-fill-available;
+}
+.grid-block-of-main-content div div text {
+  padding: 10px;
+}

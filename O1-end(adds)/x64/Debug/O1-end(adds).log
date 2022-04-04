@@ -1,8 +1,2 @@
-﻿  O1-end(adds).cpp
-D:\My documents\Code\Labs2Sem\O1-end(adds)\O1-end(adds).cpp(12,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  lab2add2.cpp
-  lab2add3.cpp
-D:\My documents\Code\Labs2Sem\O1-end(adds)\lab2add3.cpp(11,16): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-D:\My documents\Code\Labs2Sem\O1-end(adds)\lab2add3.cpp(15,21): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-  Создание кода...
+﻿  lab5add3.cpp
   O1-end(adds).vcxproj -> D:\My documents\Code\Labs2Sem\x64\Debug\O1-end(adds).exe

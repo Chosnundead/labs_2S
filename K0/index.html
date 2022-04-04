@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="emblem">
+      <div class="emblem" onclick="document.location = 'index.html'">
         <img src="./images/emblem.png" width="150" height="150" alt="emblem" />
       </div>
       <div class="info">
@@ -26,12 +26,23 @@
     </header>
 
     <nav class="nav">
-      <a href="">Домой</a>
-      <a href="">Курсы</a>
+      <a href="index.html">Домой</a>
+      <a href="pages/courses.html">Курсы</a>
       <a href="">Календарь</a>
-      <a href="">Магазин</a>
-      <a href="">Школа</a>
-      <a href="">Новости</a>
+      <a href="pages/shop.html">Магазин</a>
+      <a class="school" href=""
+        >Школа
+        <ul class="school-menu">
+          <li>Инструктора</li>
+        </ul>
+      </a>
+      <a class="news" href=""
+        >Новости
+        <ul class="news-menu">
+          <li>ТВ</li>
+          <li>Правила школы</li>
+        </ul></a
+      >
       <a href="">Контакты</a>
     </nav>
 
@@ -40,19 +51,44 @@
         <img src="./images/content0.jpg" />
         <p>Курсы на чистом воздухе</p>
         <p>Большой выбор курсов, от 4 и 5-ти уровневых инструкторов</p>
-        <button>Читать далее >></button>
+        <button onclick="document.location = 'pages/courses.html'">
+          Читать
+        </button>
       </div>
       <div class="content">
         <img src="./images/content1.jpg" />
         <p>Экспедиции в зелёные зоны</p>
         <p>Весной, летом и осенью</p>
-        <button>Читать далее >></button>
+        <button onclick="document.location = 'pages/expeditions.html'">
+          Читать
+        </button>
       </div>
       <div class="content">
         <img src="./images/content2.jpg" />
         <p>Магазин предметов для выживания</p>
         <p>Все что вам необходимо в лесу</p>
-        <button>Читать далее >></button>
+        <button onclick="document.location = 'pages/shop.html'">Читать</button>
+      </div>
+      <div class="content">
+        <img src="./images/content3.jpg" />
+        <p>Ядерная война</p>
+        <p>Что делать при ядерных ударах?</p>
+        <button>Читать</button>
+      </div>
+      <div class="content">
+        <img src="./images/content4.jpg" />
+        <p>Ураган и подготовка к нему</p>
+        <p>
+          В этой статье всё про ураганы, и подготовку к этому стихийному
+          бедствию
+        </p>
+        <button>Читать</button>
+      </div>
+      <div class="content">
+        <img src="./images/content5.jpg" />
+        <p>Женская самооборона</p>
+        <p>Учитель по самообороне, необходимые средства и план действий</p>
+        <button>Читать</button>
       </div>
     </div>
 
@@ -65,30 +101,85 @@
 
     <div id="block-of-info" class="info-block">
       <div class="info-block-left">
+        <p>Номер центра 001135</p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
-          porro iste dolores omnis fuga mollitia autem quos consectetur tempore
-          necessitatibus.
+          Школа выживания предлагает широкий выбор аккредитованных курсов. Этот
+          означает, что вы получаете курс, утвержденный аккредитационной и
+          присуждающей организация. Мы проверяем два раза в год, чтобы
+          убедиться, что наши инструкторы, наша экипировка, наши площадки и
+          процедуры всегда на высоте и эффективно и профессионально, насколько
+          это возможно.
         </p>
+        <p>Купите с уверенностью Участник схемы</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          tempore voluptas, repudiandae culpa totam maxime quod fuga recusandae
-          minus suscipit.
+          Это означает, что вы видите то, что получаете. Быть частью этого
+          схема, необходимая для предоставления курсов, которые мы предлагаем,
+          на условиях, которые мы предложение. Это значит, что вы не будете
+          разочарованы.
+        </p>
+        <p>Школа выживания обеспечивает безопасное и увлекательное обучение</p>
+        <p>
+          Мы верим в опыт с добавленной стоимостью. Поэтому наши преподаватели
+          не только научат, но и развлекут развлекательный курс, сохраняя при
+          этом вашу безопасность.
+        </p>
+        <p>Экспедиции придерживаются BS8848</p>
+        <p>
+          Все наши экспедиции тщательно проверяются, чтобы убедиться, что они
+          придерживаться BS8848. Это означает, что ваша поездка максимально
+          безопасна. Курсы Survival School разработаны так, чтобы быть веселыми
+          и безопасными (мы нанимаем Консультант по охране труда и технике
+          безопасности), передавая необходимые вам знания чтобы можно было
+          комфортно жить в пустыне. Наши инструкторы будут проводить время с
+          каждым участником, следя за тем, чтобы они получили достаточно знание
+          и практика по каждому навыку, чтобы иметь возможность овладеть им до
+          уход с курса. Инструкторы Школы выживания широко признан одним из
+          лучших в округе. Мы подготовили инструкторов которые открыли
+          собственные школы, но мы проводим собственные исследования, имеют свой
+          собственный стиль, и нас просят предоставить инструкторов для других
+          организации. Все курсы основаны на практическом опыте. Вы получите
+          шанс попробовать новые навыки и приемы, увидеть съедобные растения в
+          их естественной среде обитания, стройте свои собственные убежища и
+          получайте удовольствие и смех, который сочетается с бушкрафтом в дикой
+          природе.
         </p>
       </div>
       <div class="info-block-right">
+        <p>ELC — номер провайдера 5926.</p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-          aliquam perferendis reprehenderit, laudantium fuga aperiam cum
-          repudiandae. Sequi saepe animi dolorem culpa dicta sint neque
-          voluptatum! Dolorum necessitatibus nobis at!
+          Survival School также является зарегистрированным поставщиком
+          Bushcraft, Survival и Навыки дикой природы для члена HM Forces через
+          Enhanced Служба администрирования кредитов на обучение. Вы можете
+          использовать свое обучение Кредиты здесь!
+        </p>
+        <p>Бушкрафт, выживание и жизнь в дикой природе</p>
+        <p>
+          Survival School Ltd – всемирно известный центр, специализирующийся к
+          обучению Bushcraft, навыкам выживания и жизни в дикой природе. Мы
+          делаем все это, пока вы учитесь жить с природой, наслаждаться, уважать
+          окружающую среду и расширить границы своих возможностей. Мы
+          специализируются на обучении удивительным новым навыкам и
+          предоставлении знаний чтобы вы жили в пустыне. Вы сможете попробовать
+          много нового деятельность и идеи, получая при этом серьезное
+          удовольствие! Курсы доступны в Девоне, Стаффордшире, Уэльсе,
+          Юго-Западной Шотландии и высокогорье Шотландии. Школа выживания
+          является утвержденным центром для Индивидуальные квалификации NCFE.
+          NCFE является ведущим поставщиком признанные на национальном уровне
+          квалификации, и мы стремимся предоставить исключительное обслуживание
+          клиентов.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, totam
-          doloremque perspiciatis ab debitis, labore aspernatur itaque nulla,
-          odio quos quaerat? Ex laboriosam cupiditate maxime sint nihil ratione
-          praesentium soluta aperiam perspiciatis quis assumenda dolorem, optio
-          rerum quia atque voluptatem!
+          23 года проведения курсов Bushcraft, выживания и жизни в дикой природе
+        </p>
+        <p>
+          Поскольку мы существуем уже почти два десятилетия, мы знаем кое-что о
+          беговой курс и предоставление самого лучшего оборудования. Наши
+          инструкторы также имеют десятилетний опыт. Все они владеют Bushcraft
+          4-го уровня, Инструкторы и наставники по навыкам выживания и жизни в
+          дикой природе Сертификат и так вы получите исключительно высокое
+          качество инструкция. Они также используют оборудование, которое мы
+          продаем. Это означает, что все оборудование, которое мы продаем,
+          хорошо проверено.
         </p>
       </div>
     </div>
@@ -97,22 +188,22 @@
     <footer class="footer">
       <div class="devs">
         <p class="devs-head">
-          <img src="./images/twitter-logo.png" alt="" />
-          <img src="./images/facebook-logo.png" alt="" />
-          Registration Number: 3866846 / VAT Number: GB 777 5222 04 / Approved
-          NCFE Centre No. 1135 Registered Office: Higher Shuteslade, Meeth,
-          Okehampton, Devon, EX20 3EP
+          <img src="../images/twitter-logo.png" alt="" />
+          <img src="../images/facebook-logo.png" alt="" />
+          Регистрационный номер: 3866846 / Номер НДС: GB 777 5222 04 /
+          Утверждено NCFE Center № 1135 Зарегистрированный офис: Higher
+          Shuteslade, Meeth, Окхэмптон, Девон, EX20 3EP
         </p>
         <p class="devs-foot">
           © 2022 Survival School Ltd. Terms & Conditions. Privacy. Legal Notice.
-          Terms. Web Design Devon by Hoot Media
+          Terms. Web Design Devon by someone like me
         </p>
       </div>
       <div class="logos">
-        <img src="./images/logo0.jpg" alt="" />
-        <img src="./images/logo1.png" alt="" />
-        <img src="./images/logo2.png" alt="" />
-        <img src="./images/logo3.png" alt="" />
+        <img src="../images/logo0.jpg" alt="" />
+        <img src="../images/logo1.png" alt="" />
+        <img src="../images/logo2.png" alt="" />
+        <img src="../images/logo3.png" alt="" />
       </div>
     </footer>
   </body>
