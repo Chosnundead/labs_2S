@@ -139,6 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lab11add1.cpp" />
+    <ClCompile Include="lab11add2.cpp" />
+    <ClCompile Include="lab12add1.cpp" />
+    <ClCompile Include="lab12add2.cpp" />
+    <ClCompile Include="lab12add3.cpp" />
+    <ClCompile Include="lab13add1.cpp" />
+    <ClCompile Include="lab13add2.cpp" />
+    <ClCompile Include="lab13add3.cpp" />
+    <ClCompile Include="lab14add1.cpp" />
+    <ClCompile Include="lab14add2.cpp" />
+    <ClCompile Include="lab14add3.cpp" />
     <ClCompile Include="lab1add1.cpp" />
     <ClCompile Include="lab1add2.cpp" />
     <ClCompile Include="lab1add3.cpp" />
@@ -153,9 +164,28 @@
     <ClCompile Include="lab5add1.cpp" />
     <ClCompile Include="lab5add2.cpp" />
     <ClCompile Include="lab5add3.cpp" />
+    <ClCompile Include="lab6add1.cpp" />
+    <ClCompile Include="lab6add2.cpp" />
+    <ClCompile Include="lab6add3.cpp" />
+    <ClCompile Include="lab7add1.cpp" />
+    <ClCompile Include="lab8add1.cpp" />
+    <ClCompile Include="lab9add1.cpp" />
+    <ClCompile Include="lab9add2.cpp" />
+    <ClCompile Include="lab9add3.cpp" />
     <ClCompile Include="O1-end(adds).cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="lab11add1.h" />
+    <ClInclude Include="lab11add2.h" />
+    <ClInclude Include="lab12add1.h" />
+    <ClInclude Include="lab12add2.h" />
+    <ClInclude Include="lab12add3.h" />
+    <ClInclude Include="lab13add1.h" />
+    <ClInclude Include="lab13add2.h" />
+    <ClInclude Include="lab13add3.h" />
+    <ClInclude Include="lab14add1.h" />
+    <ClInclude Include="lab14add2.h" />
+    <ClInclude Include="lab14add3.h" />
     <ClInclude Include="lab1add1.h" />
     <ClInclude Include="lab1add2.h" />
     <ClInclude Include="lab1add3.h" />
@@ -170,6 +200,14 @@
     <ClInclude Include="lab5add1.h" />
     <ClInclude Include="lab5add2.h" />
     <ClInclude Include="lab5add3.h" />
+    <ClInclude Include="lab6add1.h" />
+    <ClInclude Include="lab6add2.h" />
+    <ClInclude Include="lab6add3.h" />
+    <ClInclude Include="lab7add1.h" />
+    <ClInclude Include="lab8add1.h" />
+    <ClInclude Include="lab9add1.h" />
+    <ClInclude Include="lab9add2.h" />
+    <ClInclude Include="lab9add3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
