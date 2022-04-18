@@ -1,0 +1,8 @@
+.MyInput {
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  padding: 10px;
+  display: inline;
+  width: fit-content;
+}

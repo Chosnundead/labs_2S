@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Note from "./Note";
+import classes from "../styles/Notes.module.css";
 
 const Notes = () => {
   const [list, setList] = useState([
@@ -40,6 +41,7 @@ const Notes = () => {
         </p>
         <p>
           <button
+            className={classes.Notes}
             onClick={(event) => {
               event.preventDefault();
               console.log(newList);
@@ -54,6 +56,7 @@ const Notes = () => {
           </button>
           {list.length >= 3 && (
             <button
+              className={classes.Notes}
               onClick={(event) => {
                 event.preventDefault();
                 let temp = list.slice(0);
@@ -66,6 +69,7 @@ const Notes = () => {
           )}
           {list.length >= 3 && (
             <button
+              className={classes.Notes}
               onClick={(event) => {
                 event.preventDefault();
                 let temp = list.slice(0);

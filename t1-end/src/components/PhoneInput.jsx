@@ -54,7 +54,9 @@ const PhoneInput = function (props) {
             outline: "none",
             border: "none",
             marginLeft: "36px",
+            marginBottom: "0px",
             padding: "11px",
+            width: "fit-content",
           }}
           onChange={(event) => {
             if (

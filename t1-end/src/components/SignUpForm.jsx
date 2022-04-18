@@ -25,12 +25,18 @@ const SignUpForm = () => {
         <input />
       </p>
       <p>
-        <input type="radio" name="sex" />
+        <input
+          type="radio"
+          name="sex"
+          style={{ display: "inline", width: "20px" }}
+        />
         Мужчина
-        <input type="radio" name="sex" />
+        <input
+          type="radio"
+          name="sex"
+          style={{ display: "inline", width: "20px" }}
+        />
         Женщина
-        <input type="radio" name="sex" />
-        Неоределился:)
       </p>
       <p>
         <input type="date" />

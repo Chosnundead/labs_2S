@@ -1,0 +1,65 @@
+.product-main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 666px;
+  gap: 20px;
+}
+
+.product-left {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.product-left-ablosute {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.product-left-ablosute-discount {
+  padding: 10px;
+  background-color: red;
+  margin: 0px 5px 0px 5px;
+  color: white;
+}
+
+.product-left-ablosute-new {
+  padding: 10px;
+  background-color: lightgrey;
+  margin: 0px 5px 0px 5px;
+  color: black;
+}
+
+.product-left-image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.product-right-name {
+  font-weight: bold;
+  color: grey;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.product-right-price {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.product-right-price-old {
+  margin-left: 20px;
+  font-size: 13px;
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+.product-right-number {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.product-right-description {
+  color: grey;
+  margin-bottom: 50px;
+}

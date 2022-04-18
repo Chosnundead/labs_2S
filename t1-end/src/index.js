@@ -23,5 +23,14 @@ document.querySelector("#select").addEventListener("change", () => {
     case "6":
       ReactDOM.render(<App lab="6" />, document.getElementById("root"));
       break;
+    case "7":
+      ReactDOM.render(<App lab="7" />, document.getElementById("root"));
+      break;
+    case "8":
+      ReactDOM.render(<App lab="8" />, document.getElementById("root"));
+      break;
+    case "9":
+      ReactDOM.render(<App lab="9" />, document.getElementById("root"));
+      break;
   }
 });

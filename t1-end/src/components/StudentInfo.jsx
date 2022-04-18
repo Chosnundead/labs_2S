@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SignUpEmailInput from "./SignUpEmailInput";
-import "../styles/style.css"
+import "../styles/style.css";
 
 import PhoneInput from "./PhoneInput";
 
@@ -77,7 +77,10 @@ const StudentInfo = (props) => {
           className={`${id}email`}
           dataFunction={_changeIsValid}
         />
-        <PhoneInput dataId={`${id}number`} />
+        <p>
+          Телефон
+          <PhoneInput dataId={`${id}number`} />
+        </p>
         <p>
           {isValid == true && <button onClick={_isValid}>Отправить</button>}
         </p>

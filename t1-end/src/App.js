@@ -10,6 +10,9 @@ import Calendar from "./components/Calendar";
 import SignUpForm from "./components/SignUpForm";
 import StudentInfo from "./components/StudentInfo";
 import Notes from "./components/Notes";
+import { Scheduler } from "./components/Scheduler";
+import { Coments } from "./components/Coments";
+import { Shop } from "./components/Shop";
 
 function App(props) {
   // const [value, setValue] = useState("Text");
@@ -60,6 +63,24 @@ function App(props) {
           <StudentInfo />
           <hr />
           <Notes />
+        </div>
+      );
+    case "7":
+      return (
+        <div className="lab7">
+          <Scheduler></Scheduler>
+        </div>
+      );
+    case "8":
+      return (
+        <div className="lab8">
+          <Coments />
+        </div>
+      );
+    case "9":
+      return (
+        <div className="lab9">
+          <Shop />
         </div>
       );
   }
