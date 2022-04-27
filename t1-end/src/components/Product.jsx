@@ -34,8 +34,10 @@ export const Product = ({ product, ...props }) => {
       <div className="product-right">
         <h2 className="product-right-name">{product.name}</h2>
         <p className="product-right-price">
-          {Math.round(product.price * (1 - product.discount / 100))}$
-          <text className="product-right-price-old">{product.price}$</text>
+          {product.price}$
+          <text className="product-right-price-old">
+            {Math.round(product.price * (product.discount / 100 + 1))}$
+          </text>
         </p>
         <p className="product-right-number">Количество: {product.number}шт.</p>
         <p className="product-right-description">{product.description}</p>

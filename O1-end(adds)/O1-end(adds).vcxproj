@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lab10add1.cpp" />
     <ClCompile Include="lab11add1.cpp" />
     <ClCompile Include="lab11add2.cpp" />
     <ClCompile Include="lab12add1.cpp" />
@@ -175,6 +176,7 @@
     <ClCompile Include="O1-end(adds).cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="lab10add1.h" />
     <ClInclude Include="lab11add1.h" />
     <ClInclude Include="lab11add2.h" />
     <ClInclude Include="lab12add1.h" />

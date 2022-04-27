@@ -1,13 +1,3 @@
-﻿  lab14add1.cpp
-D:\My documents\Code\Labs2Sem\O1-end(adds)\lab14add1.cpp(10,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\My documents\Code\Labs2Sem\O1-end(adds)\lab14add1.cpp(26,3): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  lab14add2.cpp
-D:\My documents\Code\Labs2Sem\O1-end(adds)\lab14add2.cpp(10,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\My documents\Code\Labs2Sem\O1-end(adds)\lab14add2.cpp(36,3): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  lab14add3.cpp
-D:\My documents\Code\Labs2Sem\O1-end(adds)\lab14add3.cpp(12,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\My documents\Code\Labs2Sem\O1-end(adds)\lab14add3.cpp(31,3): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  O1-end(adds).cpp
-D:\My documents\Code\Labs2Sem\O1-end(adds)\O1-end(adds).cpp(16,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  Создание кода...
+﻿  O1-end(adds).cpp
+D:\My documents\Code\Labs2Sem\O1-end(adds)\O1-end(adds).cpp(17,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
   O1-end(adds).vcxproj -> D:\My documents\Code\Labs2Sem\x64\Debug\O1-end(adds).exe

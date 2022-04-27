@@ -690,6 +690,5 @@ void delAll(Tree* t) //Очистка дерева
 		delete t;
 	}
 }
-
-
 */
+

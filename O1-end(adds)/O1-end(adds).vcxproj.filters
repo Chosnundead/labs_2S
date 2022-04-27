@@ -117,6 +117,9 @@
     <ClCompile Include="lab14add3.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="lab10add1.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lab2add1.h">
@@ -216,6 +219,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="lab14add3.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="lab10add1.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
