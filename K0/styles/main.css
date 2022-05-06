@@ -8,6 +8,7 @@ button {
   margin: 20px;
   outline: none;
 }
+
 button {
   width: 130px;
   height: 40px;
@@ -28,6 +29,7 @@ button {
 button {
   transition: all 0.3s ease;
 }
+
 button:hover {
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
     7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
@@ -37,9 +39,11 @@ button:hover {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -128,12 +132,13 @@ header {
   }
 
   100% {
-    max-height: 100px;
+    max-height: 1000px;
   }
 }
 
 .school-menu,
-.news-menu {
+.news-menu,
+.adaptive-menu {
   list-style: none;
   position: absolute;
   display: none;
@@ -145,7 +150,8 @@ header {
 }
 
 .school-menu li,
-.news-menu li {
+.news-menu li,
+.adaptive-menu li {
   padding: 10px;
   transition-property: background-color;
   transition-timing-function: cubic-bezier();
@@ -153,28 +159,31 @@ header {
 }
 
 .school-menu li:hover,
-.news-menu li:hover {
+.news-menu li:hover,
+.adaptive-menu li:hover {
   background-color: #c4c4c4;
 }
 
 .school:hover .school-menu,
-.news:hover .news-menu {
+.news:hover .news-menu,
+.menu:hover .adaptive-menu {
   display: inherit;
   animation-name: show;
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
-  max-height: 100px;
+  max-height: 1000px;
 }
 
 .school .school-menu:hover,
-.news .news-menu:hover {
+.news .news-menu:hover,
+.menu .adaptive-menu:hover {
   display: inherit;
   animation-name: show;
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
-  max-height: 100px;
+  max-height: 1000px;
 }
 
 .content {
@@ -278,6 +287,7 @@ header {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .info-block p:nth-of-type(even) {
   font-family: serif;
   font-style: normal;
@@ -286,4 +296,8 @@ header {
   color: #4a4a4a;
   text-align: center;
   margin-bottom: 21px;
+}
+
+.adaptive-nav {
+  display: none;
 }

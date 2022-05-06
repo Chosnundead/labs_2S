@@ -1,0 +1,243 @@
+*
+  margin: 0px
+  padding: 0px
+  box-sizing: border-box
+
+button
+  margin: 20px
+  outline: none
+  width: 130px
+  height: 40px
+  padding: 10px 25px
+  border: 2px solid #000
+  font-family: "Lato", sans-serif
+  font-weight: 500
+  background: transparent
+  cursor: pointer
+  transition: all 0.3s ease
+  position: relative
+  display: inline-block
+
+  /* background: linear-gradient(-45deg, #009914, #019114, #008834, #005f05);
+   *background-size: 400% 400%;
+   *animation: gradient 30s ease infinite;
+
+  transition: all 0.3s ease
+
+  &:hover
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001
+
+@keyframes gradient
+  0%
+    background-position: 0% 50%
+
+  50%
+    background-position: 100% 50%
+
+  100%
+    background-position: 0% 50%
+
+header a
+  color: white
+  text-decoration: none
+
+.header .info .info-foot nav a
+  transition-property: color
+  transition-timing-function: cubic-bezier()
+  transition-duration: 1s
+
+  &:hover
+    color: #5f0000b7
+
+header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+  /* background-color: #537100;
+  background: linear-gradient(-45deg, #009914, #019114, #008834, #005f05)
+  background-size: 400% 400%
+  animation: gradient 30s ease infinite
+
+.info
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-end
+  color: white
+
+.info-foot
+  padding: 20px
+  font-family: sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 36px
+
+.info-head
+  font-family: sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 36px
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+.nav
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background-color: #c4c4c4
+  height: 66px
+  padding-left: 100px
+  padding-right: 100px
+
+  a
+    color: black
+    font-family: monospace
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    text-decoration: none
+    padding: 10px
+    transition-property: background-color
+    transition-timing-function: cubic-bezier()
+    transition-duration: 1s
+
+    &:hover
+      background-color: #929292
+
+@keyframes show
+  0%
+    max-height: 0px
+
+  100%
+    max-height: 1000px
+
+.school-menu, .news-menu, .adaptive-menu
+  list-style: none
+  position: absolute
+  display: none
+  background-color: #929292
+  width: max-content
+  margin-left: 10px
+  overflow: hidden
+  max-height: 0px
+
+.school-menu li, .news-menu li, .adaptive-menu li
+  padding: 10px
+  transition-property: background-color
+  transition-timing-function: cubic-bezier()
+  transition-duration: 1s
+
+.school-menu li:hover, .news-menu li:hover, .adaptive-menu li:hover
+  background-color: #c4c4c4
+
+.school:hover .school-menu, .news:hover .news-menu, .menu:hover .adaptive-menu, .school .school-menu:hover, .news .news-menu:hover, .menu .adaptive-menu:hover
+  display: inherit
+  animation-name: show
+  animation-duration: 1s
+  animation-timing-function: ease
+  animation-iteration-count: 1
+  max-height: 1000px
+
+.content
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 400px
+
+  img
+    width: 400px
+    height: 275px
+
+  p
+    &:nth-of-type(1)
+      font-family: serif
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      color: #4a4a4a
+
+    &:nth-of-type(2)
+      font-family: serif
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      color: #999999
+
+.content-block
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  justify-items: center
+  gap: 21px
+  margin: 50px 100px 50px 100px
+
+.announce-block
+  /* background-color: #006316;
+  color: white
+  font-family: sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 36px
+  padding: 21px 100px 21px 100px
+  background: linear-gradient(-45deg, #009914, #019114, #008834, #005f05)
+  background-size: 400% 400%
+  animation: gradient 30s ease infinite
+
+.footer
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.logos
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+
+.devs img
+  height: 21px
+  float: left
+  margin: 1px
+
+.devs-head
+  font-family: "Times New Roman", Times, serif
+  font-style: normal
+  font-weight: 400
+  font-size: 10px
+  color: #c4c4c4
+  width: 300px
+
+.devs-foot
+  font-family: "Times New Roman", Times, serif
+  font-style: normal
+  font-weight: 400
+  font-size: 9px
+  color: #e5e5e5
+
+.info-block
+  margin: 50px 100px 50px 100px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 21px
+  justify-items: center
+
+  p
+    &:nth-of-type(odd)
+      font-family: serif
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      color: #4a4a4a
+      text-align: center
+      margin-bottom: 10px
+
+    &:nth-of-type(even)
+      font-family: serif
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      color: #4a4a4a
+      text-align: center
+      margin-bottom: 21px
+
+.adaptive-nav
+  display: none
