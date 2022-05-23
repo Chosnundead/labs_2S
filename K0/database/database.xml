@@ -1,2 +1,33 @@
 <?xml version = '1.0'?>
-<img>./images/content0.jpg</img>
+<root>
+    <object>
+        <isImage>true</isImage>
+        <image>images/content0.jpg</image>
+        <date>21.05.2022</date>
+    </object>
+    <object>
+        <isImage>true</isImage>
+        <image>images/content1.jpg</image>
+        <date>21.05.2022</date>
+    </object>
+    <object>
+        <isImage>true</isImage>
+        <image>images/content2.jpg</image>
+        <date>21.05.2022</date>
+    </object>
+    <object>
+        <isImage>true</isImage>
+        <image>images/content3.jpg</image>
+        <date>21.05.2022</date>
+    </object>
+    <object>
+        <isImage>true</isImage>
+        <image>images/content4.jpg</image>
+        <date>21.05.2022</date>
+    </object>
+    <object>
+        <isImage>true</isImage>
+        <image>images/content5.jpg</image>
+        <date>21.05.2022</date>
+    </object>
+</root>
