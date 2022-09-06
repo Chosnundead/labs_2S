@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <vector>
 #include "Lab3.h"
 #include "Lab4.h"
 #include "Lab5.h"
@@ -90,8 +91,64 @@ bool _menu() {
 	return true;
 }
 
+bool quickSort(vector<int>& arr, int endSort, int startSort = 0) {
+	if (endSort - 1 < arr.size() && endSort - 1 >= 0) {
+		int element = arr[endSort - 1]; 
+		int pointerOfLeftChapter = startSort;
+	if (endSort - 1 <= startSort) { return false; }
+	else {
+		int pointerOfRightChapter = endSort - 1;
+		while (pointerOfLeftChapter != pointerOfRightChapter) {
+			if (pointerOfLeftChapter + 1 == endSort - 1 && element > arr[pointerOfLeftChapter]) {
+				int temp = arr[endSort - 1];
+				arr[endSort - 1] = arr[pointerOfLeftChapter];
+				arr[pointerOfLeftChapter] = temp;
+			}
+			else {
+				if (arr[--pointerOfRightChapter] < element) {
+					while (pointerOfLeftChapter != pointerOfRightChapter) {
+						if (arr[pointerOfLeftChapter] > element) {
+							int temp = arr[pointerOfLeftChapter];
+							arr[pointerOfLeftChapter] = arr[pointerOfRightChapter];
+							arr[pointerOfRightChapter] = temp;
+							pointerOfLeftChapter++;
+							break;
+						}
+						else {
+							pointerOfLeftChapter++;
+						}
+					}
+				}
+			}
+		}
+		if (pointerOfLeftChapter == pointerOfRightChapter && arr[pointerOfRightChapter + 1] > element) {
+			int temp = arr[pointerOfRightChapter + 1];
+			arr[pointerOfRightChapter + 1] = arr[endSort - 1];
+			arr[endSort - 1] = temp;
+		}
+	}
+	}
+	else { return false; }//Опорный элемент
+	quickSort(arr, endSort / 2, startSort);
+	quickSort(arr, endSort, startSort + endSort / 2);
+}
+
 int main() {
 	setlocale(LC_ALL, "Russian");
+
+	vector<int> arr;
+	srand(time(0));
+	cout << "Before:\n";
+	for (int step = 0; step < 4; step++) {
+		arr.push_back(rand() % 10 - rand() % 10);
+		cout << "arr[" << step << "] == " << arr[step] << endl;
+	}
+	cout << "\n\nAfter:\n";
+	quickSort(arr, arr.size());
+	for (int step = 0; step < arr.size(); step++) {
+		cout << "arr[" << step << "] == " << arr[step] << endl;
+	}
+	return 0;
 
 	while (_menu());
 
